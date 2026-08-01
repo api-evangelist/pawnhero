@@ -1,7 +1,23 @@
 aid: pawnhero
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pawnhero.png
 name: PawnHero
-description: PawnHero is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: PawnHero is the Philippines' first online pawnshop, offering instant collateral-based cash
+  loans against jewelry, gold, luxury designer bags, watches, gadgets, and Apple devices. Customers
+  create a pawn ticket online, an in-house courier ("Pawntrooper") collects the item for appraisal, and
+  approved funds are disbursed within minutes via bank transfer or e-wallet, with loan terms up to 180
+  days and renewal options. The business is supervised by the Bangko Sentral ng Pilipinas (BSP). PawnHero
+  operates as a consumer-facing web and mobile service and publishes no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/pawnhero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Pawnshop
+- Lending
+- Fintech
+- Consumer Finance
+- Collateral Loans
+- Philippines
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pawnhero-domain-security.yml
 - type: Website
   url: https://pawnhero.ph
+- type: TermsOfService
+  url: https://pawnhero.ph/terms-of-use
+- type: PrivacyPolicy
+  url: https://pawnhero.ph/privacy-policy
+- type: Support
+  url: https://pawnhero.ph/faq
+- type: SignUp
+  url: https://pawnhero.ph/pawn
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
